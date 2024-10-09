@@ -81,31 +81,45 @@ The model achieved the following results on the test set:
 - **Confusion Matrix**: Illustrates the classification performance.
   
   
-
+  ![Confusion Matrix](images/confusion_matrix.png)
   
+    
 
 - **Classification Report**: Shows precision, recall and F1 score for each class.
-  
+
+
+![Classification report](images/classification_report.png)  
     
   
 
   Some example outputs:
 
-  ```bash
-  review2 = "This movie is terrible. I hate it."
+     
+    review2 = "This movie is terrible. I hate it."
   
-  sentiment2 = sentiment_prediction(review2)
+    sentiment2 = sentiment_prediction(review2)
   
-  print(f"Review: {review2}\nSentiment: {sentiment2}") 
+    print(f"Review: {review2}\nSentiment: {sentiment2}")
+    
 
-  review3 = "I would watch this movie again."
+![Negative Review](images/output1.png)
 
-  sentiment3 = sentiment_prediction(review3)
 
-  print(f"Review: {review3}\nSentiment: {sentiment3}")
+
+    review3 = "I would watch this movie again."
+
+    sentiment3 = sentiment_prediction(review3)
+
+    print(f"Review: {review3}\nSentiment: {sentiment3}")
+    
+    
+
+![Positive Review](images/output2.png)
+
 
  
 ## Future Work
+
 - **Explore Transformer Models**: Implement BERT or GPT models to improve sentiment classification.
   
 - **Data Augmentation**- Experiment with data augmentation techniques to enrich the training data.
